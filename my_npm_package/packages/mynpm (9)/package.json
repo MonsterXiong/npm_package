@@ -1,0 +1,16 @@
+{
+  "name": "demo2321",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generator-entity": "node ./generator/index.js",
+    "g": "npm run generator-entity"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.7"
+  }
+}

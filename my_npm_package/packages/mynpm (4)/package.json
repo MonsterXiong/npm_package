@@ -1,0 +1,53 @@
+{
+    "name": "biz-editor-server",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "nodemon bin/www",
+        "dev": "./node_modules/.bin/nodemon bin/www",
+        "prd": "pm2 start bin/www",
+        "test:local": "cross-env NODE_ENV=test_local jest --runInBand  --passWithNoTests --colors --forceExit",
+        "lint": "eslint \"src/**/*.{js,ts}\"",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "debug": "^4.1.1",
+        "koa": "^2.7.0",
+        "koa-bodyparser": "^4.2.1",
+        "koa-convert": "^1.2.0",
+        "koa-json": "^2.0.2",
+        "koa-logger": "^3.2.0",
+        "koa-onerror": "^4.1.0",
+        "koa-router": "^7.4.0",
+        "koa-static": "^5.0.0",
+        "koa-views": "^6.2.0",
+        "pug": "^2.0.3"
+    },
+    "devDependencies": {
+        "commitlint": "^16.2.3",
+        "commitlint-config-cz": "^0.13.3",
+        "cross-env": "^7.0.3",
+        "cz-customizable": "^6.3.0",
+        "eslint": "^8.11.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-prettier": "^4.0.0",
+        "husky": "^7.0.4",
+        "jest": "^27.5.1",
+        "lint-staged": "^12.3.7",
+        "nodemon": "^1.19.1"
+    },
+    "lint-staged": {
+        "*.js": [
+            "npm run lint",
+            "npm run test:local"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-customizable"
+        }
+    }
+}

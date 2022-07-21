@@ -1,0 +1,27 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development vuepress dev docs --no-cache",
+    "build": "vuepress build docs",
+    "deploy": "gh-pages -d docs/.vuepress/dist",
+    "commit": "npm run build && npm run deploy",
+    "docs": "bash ./deploy.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^3.1.0",
+    "husky": "^7.0.2",
+    "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "@vuepress-reco/vuepress-plugin-back-to-top": "^1.6.0"
+  }
+}
