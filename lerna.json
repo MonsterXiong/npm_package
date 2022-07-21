@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "packages/14.18.3/*",
+	"packages/12.22.11/*",
+	"packages/monster/me/*",
+	"packages/monster/latest/*"
+  ],
+  "useNx": false,
+  "version": "0.0.0"
+}
