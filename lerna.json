@@ -2,6 +2,7 @@
   "packages": [
     "packages/14.18.3/*",
 	"packages/12.22.11/*",
+	"packages/company_project/*"
 	"packages/monster/me/*",
 	"packages/monster/latest/*"
   ],
