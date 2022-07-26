@@ -6,32 +6,6 @@
     "email": "1743369777@qq.com",
     "url": "https://github.com/buqiyuan"
   },
-  "scripts": {
-    "dev": "npm run serve",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build:test": "vue-cli-service build --mode test",
-    "build:preview": "npm run build && npx serve -s dist",
-    "build:prod": "vue-cli-service build --mode production",
-    "build:report": "vue-cli-service build --report && npx live-server --open=dist/report.html",
-    "clean:lib": "npx rimraf node_modules",
-    "deploy": "npm run build && npx gh-pages -d dist",
-    "dev:debug": "cross-env DEBUG_ANTDV=true npm run serve",
-    "format": "prettier --write .",
-    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 && pretty-quick --check --branch dev",
-    "lint:fix": "eslint --fix . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json && pretty-quick --branch dev",
-    "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
-    "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
-    "lint:stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
-    "lint:lint-staged": "lint-staged",
-    "prepare": "husky install",
-    "postversion": "git push && git push origin --tags",
-    "reinstall": "rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules && npm run dev",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "test:gzip": "npx http-server dist --cors --gzip -c-1",
-    "test:br": "npx http-server dist --cors --brotli -c-1",
-    "commit": "czg"
-  },
   "dependencies": {
     "@ant-design/icons-vue": "~6.1.0",
     "@vueuse/core": "~8.9.2",
@@ -101,45 +75,5 @@
     "unplugin-vue-define-options": "~0.6.2",
     "vue-cli-plugin-windicss": "~1.1.6",
     "vue-eslint-parser": "~9.0.3"
-  },
-  "__npminstall_done": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/buqiyuan/vue3-antd-admin"
-  },
-  "homepage": "https://buqiyuan.gitee.io/vue3-antd-admin",
-  "keywords": [
-    "vue",
-    "ant-design-vue",
-    "vue3",
-    "ts",
-    "tsx",
-    "admin",
-    "typescript"
-  ],
-  "license": "MIT",
-  "engines": {
-    "node": ">=14"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.json": [
-      "prettier --write"
-    ],
-    "*.vue": [
-      "eslint --fix",
-      "prettier --write",
-      "stylelint --fix"
-    ],
-    "*.{scss,less,styl,html}": [
-      "stylelint --fix",
-      "prettier --write"
-    ],
-    "*.md": [
-      "prettier --write"
-    ]
   }
 }

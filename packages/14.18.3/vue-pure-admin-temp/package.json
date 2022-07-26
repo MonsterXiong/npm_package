@@ -2,9 +2,6 @@
   "name": "vue-pure-admin",
   "version": "3.3.0",
   "private": true,
-  "scripts": {
-
-  },
   "browserslist": [
     "> 1%",
     "not ie 11",
@@ -132,17 +129,5 @@
     "vite-svg-loader": "^3.4.0",
     "vue-eslint-parser": "^8.2.0",
     "vue-tsc": "^0.38.8"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "rollup",
-        "terser",
-        "webpack"
-      ]
-    }
-  },
-  "repository": "git@github.com:xiaoxian521/vue-pure-admin.git",
-  "author": "xiaoxian521",
-  "license": "MIT"
+  }
 }

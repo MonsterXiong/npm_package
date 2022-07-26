@@ -2,15 +2,6 @@
     "name": "biz-editor-server",
     "version": "0.1.0",
     "private": true,
-    "scripts": {
-        "start": "nodemon bin/www",
-        "dev": "./node_modules/.bin/nodemon bin/www",
-        "prd": "pm2 start bin/www",
-        "test:local": "cross-env NODE_ENV=test_local jest --runInBand  --passWithNoTests --colors --forceExit",
-        "lint": "eslint \"src/**/*.{js,ts}\"",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "prepare": "husky install"
-    },
     "dependencies": {
         "debug": "^4.1.1",
         "koa": "^2.7.0",
@@ -38,16 +29,5 @@
         "jest": "^27.5.1",
         "lint-staged": "^12.3.7",
         "nodemon": "^1.19.1"
-    },
-    "lint-staged": {
-        "*.js": [
-            "npm run lint",
-            "npm run test:local"
-        ]
-    },
-    "config": {
-        "commitizen": {
-            "path": "node_modules/cz-customizable"
-        }
     }
 }
