@@ -31,7 +31,6 @@
     "electron-updater": "^5.1.0",
     "eslint": "^8.19.0",
     "eslint-config-standard": "^17.0.0",
-    "eslint-formatter-friendly": "git+https://github.com/lyswhut/eslint-friendly-formatter.git#2170d1320e2fad13615a9dcf229669f0bb473a53",
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
@@ -51,7 +50,6 @@
     "pug-plain-loader": "^1.1.0",
     "raw-loader": "^4.0.2",
     "rimraf": "^3.0.2",
-    "spinnies": "git+https://github.com/lyswhut/spinnies.git#233305c58694aa3b053e3ab9af9049993f918b9d",
     "svg-sprite-loader": "^6.0.11",
     "svg-transform-loader": "^2.0.13",
     "svgo-loader": "^3.0.1",
@@ -62,7 +60,6 @@
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3",
-    "webpack-hot-middleware": "git+https://github.com/lyswhut/webpack-hot-middleware.git#329c4375134b89d39da23a56a94db651247c74a1",
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
@@ -70,7 +67,6 @@
     "crypto-js": "^4.1.1",
     "electron-log": "^4.4.8",
     "electron-store": "^8.0.2",
-    "font-list": "git+https://github.com/lyswhut/node-font-list.git#4edbb1933b49a9bac1eedd63a31da16b487fe57d",
     "http-terminator": "^3.2.0",
     "iconv-lite": "^0.6.3",
     "image-size": "^1.0.1",

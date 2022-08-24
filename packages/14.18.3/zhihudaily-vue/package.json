@@ -4,10 +4,6 @@
   "description": "A Vue.js project",
   "author": "yatessss <897969073@qq.com>",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yatessss/zhihudaily-vue.git"
-  },
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
@@ -58,8 +54,6 @@
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0",
     "webpack-merge": "^0.8.3",
-    "node-sass": "^3.6.0",
-    "postcss-px2rem": "^0.3.0",
-    "sass-loader": "^3.2.0"
+    "postcss-px2rem": "^0.3.0"
   }
 }

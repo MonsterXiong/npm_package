@@ -86,7 +86,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-vue": "^7.8.0",
-    "fibers": "^5.0.0",
     "lint-staged": "^10.5.4",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
@@ -99,27 +98,5 @@
     "vue-cli-plugin-style-resources-loader": "^0.1.5",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^5.30.0"
-  },
-  "bugs": {
-    "url": "https://github.com/armour/vue-typescript-admin-template/issues"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "keywords": [
-    "vue",
-    "typescript",
-    "admin",
-    "template",
-    "element-ui"
-  ],
-  "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "vue-cli-service lint"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/armour/vue-typescript-admin-template.git"
   }
 }
