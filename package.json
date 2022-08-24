@@ -5,6 +5,7 @@
     "lerna": "^5.1.8"
   },
   "scripts": {
-    "bootstrap":"lerna bootstrap"
+    "bootstrap":"lerna bootstrap",
+    "rm:pkl":"node ./del-package-lock.js"
   }
 }
