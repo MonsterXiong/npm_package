@@ -16,7 +16,7 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "electron":"4.2.5 ",
-    "electron-packager":"14.0.0"
+    "electron": "^20.0.3",
+    "electron-packager": "14.0.0"
   }
 }

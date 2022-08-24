@@ -2,20 +2,6 @@
   "name": "visual-drag-demo",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "FORCE_COLOR=1 node scripts/verify-commit.js"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx}": "eslint",
-    "src/**/*.{vue,scss,css,sass}": "stylelint --allow-empty-input"
-  },
   "dependencies": {
     "core-js": "^3.6.5",
     "element-ui": "^2.14.1",

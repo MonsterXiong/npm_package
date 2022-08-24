@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "backend":"node server.js"
+    "backend": "node server.js"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
